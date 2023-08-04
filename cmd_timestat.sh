@@ -1,7 +1,7 @@
 #!/bin/bash
 TIMEFORMAT=$'%R\t%U\t%S'   #%0lR for slow executing commands
 SAVEPATH="/home/res"
-help_msg="Positional arguments: \n\tCommand: Complete command to analyse the duration of.\n\nFlag arguments: \n\t-h help\n\t-q quiet mode, suppress the inner command output.\n\t-c compact mode, show the results as comma-separated numbers.\n\t-e log errors to errors.log file\n\t-r retry command in case of error\n\t-n number of iterations.\n\t-m [csv/txt] save measurements in the specified format.\n\t-s result file save base path\n\t-d comma-separated list of strings to be deleted from the error log, useful in case of commands that print everything to the stderr"
+help_msg="Positional arguments: \n\tCommand: Complete command to analyse the duration of.\n\nFlag arguments: \n\t-h help\n\t-q quiet mode, suppress the inner command output.\n\t-c compact mode, show the results as comma-separated numbers.\n\t-e log errors to errors.log file.\n\t-r retry command in case of error.\n\t-n number of iterations.\n\t-m [csv/txt] save measurements in the specified format.\n\t-s result file save base path.\n\t-d comma-separated list of strings to be deleted from the error log, useful in case of commands that print everything to the stderr."
 comma_output=false
 suppress_output=false
 log_errors=false
