@@ -83,7 +83,7 @@ i=0
 while [ $i -lt $new_it ]; do
     { time redirect_output "${command[@]}" ; } 2>> "$outfile"
     detect_and_log_errors
-    sleep 5
+    sleep 1
     i=$((i+1))
 done
 
